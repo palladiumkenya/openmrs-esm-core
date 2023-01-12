@@ -54,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DIR_NAME: "esm-devtools-app"
+      DIR_NAME: "apps/esm-devtools-app"
       ESM_NAME: "@openmrs/esm-devtools-app"
       JS_NAME: "openmrs-esm-devtools-app.js"
 
