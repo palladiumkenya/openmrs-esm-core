@@ -114,7 +114,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}
-          mv packages/apps/${{ env.DIR_NAME }}/dist/*.* dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/
+          mv packages/${{ env.DIR_NAME }}/dist/*.* dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/
       # deploying to Data
       - name: deploy-to-server
         uses: Pendect/action-rsyncer@v2.0.0
@@ -157,7 +157,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}
-          mv packages/apps/${{ env.DIR_NAME }}/dist/*.* dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/
+          mv packages/${{ env.DIR_NAME }}/dist/*.* dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/
       # deploying to Data
       - name: deploy-to-server
         uses: Pendect/action-rsyncer@v2.0.0
@@ -202,7 +202,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}
-          mv packages/apps/${{ env.DIR_NAME }}/dist/*.* dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/
+          mv packages/${{ env.DIR_NAME }}/dist/*.* dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/
       # deploying to Data
       - name: deploy-to-server
         uses: Pendect/action-rsyncer@v2.0.0
@@ -247,7 +247,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}
-          mv packages/apps/${{ env.DIR_NAME }}/dist/*.* dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/
+          mv packages/${{ env.DIR_NAME }}/dist/*.* dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/
       # deploying to Data
       - name: deploy-to-server
         uses: Pendect/action-rsyncer@v2.0.0
@@ -290,7 +290,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}
-          mv packages/shell/${{ env.DIR_NAME }}/dist/*.* dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/
+          mv packages/${{ env.DIR_NAME }}/dist/*.* dist/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/
       # deploying to Data
       - name: deploy-to-server
         uses: Pendect/action-rsyncer@v2.0.0
